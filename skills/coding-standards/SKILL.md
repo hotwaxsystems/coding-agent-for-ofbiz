@@ -1,3 +1,12 @@
+---
+name: coding-standards
+description: |-
+  - Writing or reviewing Java, Groovy, or XML changes in OFBiz.
+  - Choosing naming conventions for components, entities, services, or classes.
+  - Deciding whether logic belongs in XML actions vs. Groovy.
+  - Applying UtilValidate, UtilMisc, EntityQuery, or UI-label (i18n) patterns.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,15 +25,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: coding-standards
-description:
-- Writing or reviewing Java, Groovy, or XML changes in OFBiz.
-- Choosing naming conventions for components, entities, services, or classes.
-- Deciding whether logic belongs in XML actions vs. Groovy.
-- Applying UtilValidate, UtilMisc, EntityQuery, or UI-label (i18n) patterns.
----
 
 # Skill: coding-standards
 ## Goal

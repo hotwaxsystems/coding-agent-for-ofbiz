@@ -1,3 +1,12 @@
+---
+name: manage-groovy
+description: |
+  Write Groovy logic for OFBiz services and scripts. Use when
+  - Writing business logic for OFBiz services using Groovy.
+  - Creating UI/API data preparation scripts for Screen Widgets.
+  - Implementing modern entity logic using Groovy DSL.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,15 +25,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-groovy
-description: |
-  Write Groovy logic for OFBiz services and scripts. Use when
-  - Writing business logic for OFBiz services using Groovy.
-  - Creating UI/API data preparation scripts for Screen Widgets.
-  - Implementing modern entity logic using Groovy DSL.
----
 
 ## Goal
 Implement business logic, complex data transformations, and data preparation scripts in Groovy using modern OFBiz DSL patterns.

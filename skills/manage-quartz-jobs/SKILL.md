@@ -1,3 +1,13 @@
+---
+name: manage-quartz-jobs
+description: |
+  Configure, schedule, and monitor background tasks using the OFBiz Job Sandbox and Service Engine. Use when
+  - Scheduling asynchronous or recurring services.
+  - Configuring thread pool and job poller settings.
+  - Managing complex recurrence using Temporal Expressions.
+  NOTE: Despite the skill name 'manage-quartz-jobs', vanilla OFBiz uses a custom JobManager/JobPoller scheduling engine, NOT the Quartz scheduler.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,16 +26,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-quartz-jobs
-description: |
-  Configure, schedule, and monitor background tasks using the OFBiz Job Sandbox and Service Engine. Use when
-  - Scheduling asynchronous or recurring services.
-  - Configuring thread pool and job poller settings.
-  - Managing complex recurrence using Temporal Expressions.
-  NOTE: Despite the skill name 'manage-quartz-jobs', vanilla OFBiz uses a custom JobManager/JobPoller scheduling engine, NOT the Quartz scheduler.
----
 
 ## Goal
 Manage the full lifecycle of background jobs in OFBiz, ensuring scalability, persistence, and reliability across clusters.

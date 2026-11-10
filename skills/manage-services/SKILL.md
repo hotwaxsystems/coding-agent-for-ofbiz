@@ -1,3 +1,8 @@
+---
+name: manage-services
+description: Define and implement OFBiz services. Use when creating new services in services.xml, modifying attributes, orchestrating execution, or debugging dispatcher.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-services
-description: Define and implement OFBiz services. Use when creating new services in services.xml, modifying attributes, orchestrating execution, or debugging dispatcher.
----
 
 # Skill: manage-services
 

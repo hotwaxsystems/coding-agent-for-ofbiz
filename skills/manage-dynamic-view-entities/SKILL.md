@@ -1,3 +1,8 @@
+---
+name: manage-dynamic-view-entities
+description: Programmatically build complex queries using the DynamicViewEntity API for runtime query variability.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-dynamic-view-entities
-description: Programmatically build complex queries using the DynamicViewEntity API for runtime query variability.
----
 
 # manage-dynamic-view-entities
 

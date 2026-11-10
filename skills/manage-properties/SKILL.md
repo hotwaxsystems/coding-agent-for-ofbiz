@@ -1,3 +1,8 @@
+---
+name: manage-properties
+description: Manage OFBiz application properties. Use for static .properties files or dynamic SystemProperty entity configurations.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-properties
-description: Manage OFBiz application properties. Use for static .properties files or dynamic SystemProperty entity configurations.
----
 
 # Skill: manage-properties
 ## Goal

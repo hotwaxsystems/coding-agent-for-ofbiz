@@ -1,3 +1,12 @@
+---
+name: manage-minilang
+description: |
+  Manage legacy business logic in OFBiz MiniLang (XML). Use when
+  - Modifying legacy service workflows defined in XML.
+  - Troubleshooting existing MiniLang codebases.
+  - Migrating MiniLang logic to Groovy (Highly Recommended).
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,15 +25,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-minilang
-description: |
-  Manage legacy business logic in OFBiz MiniLang (XML). Use when
-  - Modifying legacy service workflows defined in XML.
-  - Troubleshooting existing MiniLang codebases.
-  - Migrating MiniLang logic to Groovy (Highly Recommended).
----
 
 # Skill: manage-minilang (v1.0)
 

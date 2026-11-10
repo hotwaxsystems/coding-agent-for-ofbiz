@@ -1,3 +1,13 @@
+---
+name: manage-security-deployment
+description: |
+  Harden and secure an OFBiz deployment at the infrastructure limit. Manage global security properties, password policies, HTTP boundaries, and file upload protection. Use when:
+  - Moving an OFBiz instance to a production environment.
+  - Configuring global password strength and expiration policies.
+  - Minimizing exposed webapp surface area.
+  - Securing Tomcat server settings against host header injection, CSRF, or Webshells.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,16 +26,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-security-deployment
-description: |
-  Harden and secure an OFBiz deployment at the infrastructure limit. Manage global security properties, password policies, HTTP boundaries, and file upload protection. Use when:
-  - Moving an OFBiz instance to a production environment.
-  - Configuring global password strength and expiration policies.
-  - Minimizing exposed webapp surface area.
-  - Securing Tomcat server settings against host header injection, CSRF, or Webshells.
----
 
 ## Goal
 Secure an OFBiz system for production deployment by hardening infrastructure configurations, minimizing surface area, enforcing strict system-wide password policies, and establishing network-level defenses.

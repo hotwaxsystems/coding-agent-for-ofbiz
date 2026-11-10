@@ -1,3 +1,8 @@
+---
+name: manage-contribution-workflow
+description: Take an OFBiz change from branch to merge-ready PR — branching and worktree setup, the framework/plugins repo pairing, pre-test data loading, commit hygiene, backporting, and the community PR template.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-contribution-workflow
-description: Take an OFBiz change from branch to merge-ready PR — branching and worktree setup, the framework/plugins repo pairing, pre-test data loading, commit hygiene, backporting, and the community PR template.
----
 
 # Skill: manage-contribution-workflow
 

@@ -1,3 +1,8 @@
+---
+name: manage-forms
+description: Define and maintain Form and Grid widgets using the OFBiz Form Widget XML.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-forms
-description: Define and maintain Form and Grid widgets using the OFBiz Form Widget XML.
----
 
 # Skill: manage-forms
 ## Goal
