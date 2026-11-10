@@ -1,0 +1,13 @@
+{
+  "name": "coding-agent-for-ofbiz",
+  "version": "0.1.0",
+  "description": "A coding agent for Apache OFBiz: an OFBiz developer agent and skills for entities, services, screens, data, ECAs, Groovy, Java and tests.",
+  "author": {
+    "name": "HotWax Systems",
+    "url": "https://github.com/hotwaxsystems"
+  },
+  "homepage": "https://github.com/hotwaxsystems/coding-agent-for-ofbiz",
+  "repository": "https://github.com/hotwaxsystems/coding-agent-for-ofbiz",
+  "license": "Apache-2.0",
+  "keywords": ["ofbiz", "apache-ofbiz", "erp", "coding", "skills"]
+}

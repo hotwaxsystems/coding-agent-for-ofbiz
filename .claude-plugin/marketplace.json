@@ -1,0 +1,14 @@
+{
+  "name": "coding-agent-for-ofbiz",
+  "owner": {
+    "name": "HotWax Systems",
+    "url": "https://github.com/hotwaxsystems"
+  },
+  "plugins": [
+    {
+      "name": "coding-agent-for-ofbiz",
+      "source": "./",
+      "description": "A coding agent for Apache OFBiz development."
+    }
+  ]
+}
