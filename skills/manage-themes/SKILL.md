@@ -1,3 +1,8 @@
+---
+name: manage-themes
+description: Manage OFBiz Visual Themes. Use when defining theme resources (CSS/JS), creating theme variations, or managing LESS files.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-themes
-description: Manage OFBiz Visual Themes. Use when defining theme resources (CSS/JS), creating theme variations, or managing LESS files.
----
 
 # Skill: manage-themes
 ## Goal

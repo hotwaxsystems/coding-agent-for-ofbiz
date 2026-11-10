@@ -1,3 +1,8 @@
+---
+name: manage-pdf-export
+description: Guidelines for generating printable PDF documents in OFBiz using Apache FOP (XSL-FO).
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-pdf-export
-description: Guidelines for generating printable PDF documents in OFBiz using Apache FOP (XSL-FO).
----
 
 # Skill: manage-pdf-export
 

@@ -1,3 +1,8 @@
+---
+name: manage-eca
+description: Manage Service Event Condition Actions (SECA) and Entity Event Condition Actions (EECA) to implement event-driven logic in OFBiz.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-eca
-description: Manage Service Event Condition Actions (SECA) and Entity Event Condition Actions (EECA) to implement event-driven logic in OFBiz.
----
 
 # Skill: Manage Service and Entity ECAs (SECA / EECA) in Apache OFBiz
 

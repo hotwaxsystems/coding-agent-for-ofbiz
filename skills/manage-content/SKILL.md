@@ -1,3 +1,8 @@
+---
+name: manage-content
+description: Create and manage OFBiz content data. Use when defining Content, DataResource, or linking content to products/categories.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-content
-description: Create and manage OFBiz content data. Use when defining Content, DataResource, or linking content to products/categories.
----
 
 # Skill: manage-content
 ## Goal

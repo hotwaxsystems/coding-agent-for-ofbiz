@@ -1,3 +1,12 @@
+---
+name: manage-security-advanced
+description: |
+  Manage OFBiz access control using permissions, security groups, service-level authorization, and business data scoping. OFBiz security is granular and permission-driven, but secure implementations must also protect services, requests, APIs, and record-level access. Use when:
+  - Implementing access controls for controllers, services, and screens.
+  - Differentiating between module-level and record-level (data scoped/multi-tenant) permissions.
+  - Designing security groups, permissions, roles, and enforcing separation of duties.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,15 +25,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-security-advanced
-description: |
-  Manage OFBiz access control using permissions, security groups, service-level authorization, and business data scoping. OFBiz security is granular and permission-driven, but secure implementations must also protect services, requests, APIs, and record-level access. Use when:
-  - Implementing access controls for controllers, services, and screens.
-  - Differentiating between module-level and record-level (data scoped/multi-tenant) permissions.
-  - Designing security groups, permissions, roles, and enforcing separation of duties.
----
 
 ## Goal
 Implement a defense-in-depth security model in OFBiz by prioritizing Service-Level validation and strict data scoping, ensuring UI-level checks are treated merely as UX conveniences.

@@ -1,3 +1,12 @@
+---
+name: manage-java-patterns
+description: |-
+  - Foundational OFBiz Java coding patterns.
+  - Architectural roles (Helper, Worker, Reader) and domain logic structure.
+  - Shared standards for logging, security, data retrieval, and validation.
+  - Prerequisite for manage-java and manage-java-events.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,15 +25,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-java-patterns
-description: |-
-  - Foundational OFBiz Java coding patterns.
-  - Architectural roles (Helper, Worker, Reader) and domain logic structure.
-  - Shared standards for logging, security, data retrieval, and validation.
-  - Prerequisite for manage-java and manage-java-events.
----
 
 # Skill: manage-java-patterns
 ## Goal

@@ -1,3 +1,8 @@
+---
+name: manage-localization-advanced
+description: Manage advanced localization in OFBiz, including date/time formatting, currency conversion, and locale-specific data handling beyond simple labels.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-localization-advanced
-description: Manage advanced localization in OFBiz, including date/time formatting, currency conversion, and locale-specific data handling beyond simple labels.
----
 
 # Manage Localization Advanced Skill
 

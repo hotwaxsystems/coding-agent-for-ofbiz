@@ -1,3 +1,11 @@
+---
+name: manage-java
+description: |-
+  - Implementing OFBiz services (business logic) in Java.
+  - Handling transactions and service contracts.
+  - Requires manage-java-patterns for shared standards.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,14 +24,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: manage-java
-description: |-
-  - Implementing OFBiz services (business logic) in Java.
-  - Handling transactions and service contracts.
-  - Requires manage-java-patterns for shared standards.
----
 
 # Skill: manage-java
 ## Goal

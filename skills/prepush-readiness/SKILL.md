@@ -1,3 +1,8 @@
+---
+name: prepush-readiness
+description: Write OFBiz changes so they pass the pre-push hook (Checkstyle for Java, CodeNarc for Groovy) and are in committable shape — clean compilation, valid XML/widgets, and focused tests — before you push.
+---
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -16,11 +21,6 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-
----
-name: prepush-readiness
-description: Write OFBiz changes so they pass the pre-push hook (Checkstyle for Java, CodeNarc for Groovy) and are in committable shape — clean compilation, valid XML/widgets, and focused tests — before you push.
----
 
 # Skill: prepush-readiness
 
