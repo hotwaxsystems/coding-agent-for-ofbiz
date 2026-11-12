@@ -46,6 +46,7 @@ This document provides a high-level summary of the specialized skills developed 
 | Skill | Description |
 | :--- | :--- |
 | **manage-groovy** | Write business logic using Groovy scripts, leveraging the `run-groovy` engine and DSL. |
+| **manage-json** | Read and write JSON with one shared Jackson mapper or OFBiz's `JSON` class; stream large files; dates as text; no full payloads in the database. |
 | **manage-java** | Implement typed business logic and worker classes in the Java source layer. |
 | **manage-java-patterns** | Adhere to OFBiz-specific Java design patterns (e.g., Worker classes, internal service calls). |
 | **manage-java-events** | Implement OFBiz Events (web boundaries) and route HTTP requests in Java. |

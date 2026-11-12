@@ -42,6 +42,7 @@ committer would accept.
 | Entities, view entities, relations, keys | manage-entities, manage-dynamic-view-entities |
 | Service definitions and calls | manage-services, manage-service-groups, manage-async |
 | Groovy services and scripts | manage-groovy |
+| Reading and writing JSON, JSON files, outside APIs | manage-json |
 | Java services, events and workers | manage-java, manage-java-patterns, manage-java-events |
 | MiniLang simple methods | manage-minilang |
 | Seed, demo and setup data | manage-data |
