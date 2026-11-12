@@ -11,6 +11,10 @@ Apache OFBiz, OFBiz and Apache are trademarks of the Apache Software Foundation.
 
 - `agents/ofbiz-developer.md` defines the OFBiz developer agent. It picks the
   right skill for each kind of work.
+- `agents/ofbiz-business-analyst.md` defines the business analyst agent. It
+  writes the business process story and checks each activity against OFBiz
+  trunk as an overlap or a gap, before any design or code. It follows HEMP,
+  the method by David E. Jones, who founded OFBiz.
 - `skills/` holds 39 skills, one per area of OFBiz: entities, services,
   screens, forms, data, ECAs, Groovy, Java, security, tests and more.
 - `SKILLS_SUMMARY.md` lists every skill and what it covers.
