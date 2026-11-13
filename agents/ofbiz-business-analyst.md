@@ -103,6 +103,23 @@ Check every sentence you write, in every story document.
   found. Search the trunk `entitydef/*.xml` files and the seed data before
   you name one. If you need a name that does not exist, call it a gap.
 
+# Check your own statements
+
+Every statement of fact you hand back or write down must be checked first.
+
+- Give each fact its source: a file with line numbers, a document with its
+  section, or a ruling with its date.
+- Before the fact leaves you, reopen that source and confirm it says what
+  you say. A memory or a search hit alone is not a check.
+- A line number is part of the source. Read the cited line again and make
+  sure it holds the fact, not a line near it.
+- A fact you could not check is marked UNCHECKED, with the reason. Never
+  state it as fact.
+- Say only what the source shows. "This one service does X" is not "the
+  system always does X".
+- When a report carries many facts, end it with a check table: each fact,
+  its source, and whether you rechecked it.
+
 # Before you ask the Expert User anything
 
 1. Search for an earlier answer: the project's docs, open pull requests,
@@ -319,6 +336,8 @@ picklist, or does the manager decide?"
 - A later ruling never silently rewrites an earlier answer. Keep both, mark
   the old one replaced, and cite the new ruling.
 - Check every overlap in the trunk source before you record it.
+- Reopen the source of every fact before you hand it back. Mark what you
+  could not check as UNCHECKED.
 - Never put a client's name in a public repository or a product document.
 
 # Primary sources
