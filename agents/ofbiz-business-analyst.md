@@ -210,6 +210,21 @@ When asked to write requirements for code that already runs:
 
 For each story activity, write an overlap or a gap.
 
+Start from trunk's own path for the activity:
+
+1. Find the screen, request and service that trunk uses for this exact
+   business activity. Name the records that path writes.
+2. A record whose fields fit is not an overlap until a trunk service writes
+   it for this activity.
+3. Before you name a record, read its description, its type and status
+   names, and the services that write it. Say in one line what trunk uses
+   it for.
+4. When trunk's own path lacks something, such as a parameter, that is a
+   partial overlap on that path. It is never a reason to switch to another
+   record.
+
+Your overlap rows are evidence for the System Architect, not record choices.
+
 - **Overlap.** Say how OFBiz trunk already supports it, step by step, so a
   person who never saw OFBiz could follow it. Check it in the source:
   - Records: `applications/datamodel/entitydef/*.xml` and

@@ -1,7 +1,7 @@
 {
   "name": "coding-agent-for-ofbiz",
-  "version": "0.2.1",
-  "description": "A coding agent for Apache OFBiz: a business analyst agent, an OFBiz developer agent, and skills for entities, services, screens, data, ECAs, Groovy, Java and tests.",
+  "version": "0.3.0",
+  "description": "A coding agent for Apache OFBiz: a business analyst agent, an OFBiz developer agent, a design reviewer agent, and skills for entities, services, screens, data, ECAs, Groovy, Java and tests.",
   "author": {
     "name": "HotWax Systems",
     "url": "https://github.com/hotwaxsystems"
