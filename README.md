@@ -18,7 +18,10 @@ Apache OFBiz, OFBiz and Apache are trademarks of the Apache Software Foundation.
 - `agents/ofbiz-design-reviewer.md` defines a read-only design reviewer. It
   tries to prove each record a design names wrong, starting from trunk's own
   service for the same business activity.
-- `skills/` holds 39 skills, one per area of OFBiz: entities, services,
+- `agents/ofbiz-ui-designer.md` defines the UI designer agent. It writes a
+  screen outline for each screen from the business process story: who opens
+  the screen, their questions in order, and where the page answers them.
+- `skills/` holds 41 skills, one per area of OFBiz: entities, services,
   screens, forms, data, ECAs, Groovy, Java, security, tests and more.
 - `SKILLS_SUMMARY.md` lists every skill and what it covers.
 
