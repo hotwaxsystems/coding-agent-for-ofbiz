@@ -33,6 +33,7 @@ in the header, and the work goes in the main column.
    | Create page | Record a new record, one or more steps |
    | Scan page | One field, scan, confirm, next. For handhelds |
    | Dashboard | Counts that say how the work is going, each linked to its list |
+   | Items into containers | Place items into boxes, pallets, carts or locations. Example: Pack order |
 
 5. Place each question. On a details page:
    - Header: record id, state, problems, actions. The first question of
@@ -57,6 +58,17 @@ in the header, and the work goes in the main column.
      No free-text search on names, emails or notes.
    - Filter and sort only on fields a database index can serve. Name each
      filter field, so the design note can name its index.
+   On an items into containers page:
+   - A "not placed yet" list comes first, under the header. It shrinks as
+     the work goes on.
+   - One card per container below it. One container is open and marked so.
+   - A scan puts the item into the open container.
+   - The user may tick items and choose any container, or a new one.
+   - Each item shows in one place only. It may move to another container,
+     or back to the "not placed yet" list.
+   - Closing a container asks for its measure, such as weight, and opens the
+     next one when items are left.
+   - Complete turns on only when the "not placed yet" list is empty.
    On a dashboard:
    - Header: the scope, such as warehouse, merchant, and day or time window.
    - Work that needs a person, such as stuck or failed work, comes first,
