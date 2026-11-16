@@ -32,6 +32,8 @@ in the header, and the work goes in the main column.
    | Details page | Review and act on one record |
    | Create page | Record a new record, one or more steps |
    | Scan page | One field, scan, confirm, next. For handhelds |
+   | Dashboard | Counts that say how the work is going, each linked to its list |
+   | Items into containers | Place items into boxes, pallets, carts or locations. Example: Pack order |
 
 5. Place each question. On a details page:
    - Header: record id, state, problems, actions. The first question of
@@ -39,6 +41,47 @@ in the header, and the work goes in the main column.
    - Main column, about two thirds wide: the work, such as lines and history.
    - Side column, about one third wide: facts about the record, such as who,
      where and dates.
+   On an index page:
+   - A required constraint, such as warehouse and a state or a date range.
+     The list never shows "everything". An empty filter is not allowed to
+     mean "all records".
+   - The constraint shows on the find form, filled in with its default. The
+     user sees it and may change it within its limits.
+   - Each default comes from what users asked for in the record, such as
+     meeting transcripts. Cite the source.
+   - A default sort, named in the outline.
+   - Pagination, with the page size named in the outline. The count shows
+     the whole match.
+   - A search box searches one field the user chooses, shown next to it.
+     Never guess the field from the value typed.
+   - Offer only fields that are cheap for the database: exact ids and codes.
+     No free-text search on names, emails or notes.
+   - Filter and sort only on fields a database index can serve. Name each
+     filter field, so the design note can name its index.
+   On an items into containers page:
+   - A "not placed yet" list comes first, under the header. It shrinks as
+     the work goes on.
+   - One card per container below it. One container is open and marked so.
+   - A scan puts the item into the open container.
+   - The user may tick items and choose any container, or a new one.
+   - Each item shows in one place only. It may move to another container,
+     or back to the "not placed yet" list.
+   - Closing a container asks for its measure, such as weight, and opens the
+     next one when items are left.
+   - Complete turns on only when the "not placed yet" list is empty.
+   On a dashboard:
+   - Header: the scope, such as warehouse, merchant, and day or time window.
+   - Work that needs a person, such as stuck or failed work, comes first,
+     right under the header.
+   - One row of count cards per question, in the order the actor asks.
+   - A total shows once. Its parts follow it and add up to it.
+   - The scope applies only to the counts it really limits.
+   - All rows are full width, with no side column, so a phone keeps the
+     same order.
+   - Each card is a number with a label. The whole card opens the list
+     behind the count, which starts with the same count.
+   - Each actor sees only the cards that answer its own questions.
+   - No alerts. The person checks the board.
 6. Name the data blocks each place uses, such as address or status.
 7. If two actors' first questions fight for the header, propose two screens.
 
