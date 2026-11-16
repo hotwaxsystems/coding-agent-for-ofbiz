@@ -51,6 +51,10 @@ in the header, and the work goes in the main column.
    - A default sort, named in the outline.
    - Pagination, with the page size named in the outline. The count shows
      the whole match.
+   - A search box searches one field the user chooses, shown next to it.
+     Never guess the field from the value typed.
+   - Offer only fields that are cheap for the database: exact ids and codes.
+     No free-text search on names, emails or notes.
    - Filter and sort only on fields a database index can serve. Name each
      filter field, so the design note can name its index.
    On a dashboard:
