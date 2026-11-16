@@ -40,6 +40,19 @@ in the header, and the work goes in the main column.
    - Main column, about two thirds wide: the work, such as lines and history.
    - Side column, about one third wide: facts about the record, such as who,
      where and dates.
+   On an index page:
+   - A required constraint, such as warehouse and a state or a date range.
+     The list never shows "everything". An empty filter is not allowed to
+     mean "all records".
+   - The constraint shows on the find form, filled in with its default. The
+     user sees it and may change it within its limits.
+   - Each default comes from what users asked for in the record, such as
+     meeting transcripts. Cite the source.
+   - A default sort, named in the outline.
+   - Pagination, with the page size named in the outline. The count shows
+     the whole match.
+   - Filter and sort only on fields a database index can serve. Name each
+     filter field, so the design note can name its index.
    On a dashboard:
    - Header: the scope, such as warehouse, merchant, and day or time window.
    - Work that needs a person, such as stuck or failed work, comes first,
