@@ -29,8 +29,8 @@ in the header, and the work goes in the main column.
    | Page type | Use for |
    | :--- | :--- |
    | Index page | Find and act on many records |
-   | Details page | Review and act on one record |
-   | Create page | Record a new record, one or more steps |
+   | Details page | Review and act on one record, and change it one card at a time. Example: View Person |
+   | Create page | Record a new record, one or more steps. Example: Create Person |
    | Scan page | One field, scan, confirm, next. For handhelds |
    | Dashboard | Counts that say how the work is going, each linked to its list |
    | Items into containers | Place items into boxes, pallets, carts or locations. Example: Pack order |
@@ -69,6 +69,37 @@ in the header, and the work goes in the main column.
    - Closing a container asks for its measure, such as weight, and opens the
      next one when items are left.
    - Complete turns on only when the "not placed yet" list is empty.
+   On a create page:
+   - One column, about two thirds wide. A phone keeps the same order.
+   - Cards in the order people fill them in, taken from the story steps.
+   - Required fields carry a star. A note at the top says what the star
+     means. Ask only for what the story requires; the rest is optional.
+   - A choice of kind, such as a person or a shared sign-in, goes in the
+     header. It hides the cards that kind does not use.
+   - A list inside the record, such as warehouses with roles, adds rows with
+     Add. A row added by mistake can be removed before Save.
+   - A dated row starts today, and the date can be changed.
+   - One Save for the whole page, at the bottom, with Cancel.
+   - An error shows under its field, in plain words. A summary at the top
+     lists the errors and links to each field. Nothing is saved until all
+     are fixed, and the page keeps what was typed.
+   - After Save, the details page of the new record opens with a short
+     message.
+   - Show only the choices the user may make, such as only their own
+     warehouse.
+   On a details page, to change the record:
+   - Each card has its own Edit. The card turns into a form in place, with
+     Save and Cancel. The rest of the page stays as it is.
+   - One card at a time. While one card is in edit, Edit on the others is
+     off.
+   - A list card has Add, which opens a row form at the top of the card.
+   - A row is ended, never deleted. End asks for an end date, with today as
+     the default. An ended row moves under "Show history" on its card.
+   - Edit, Add and End show only where the user may change that row.
+   - An error shows under its field, inside the card. After Save, the card
+     returns to read mode with a short "Saved" mark.
+   - Actions on the whole record, such as turning off a sign-in, go in the
+     header. One that changes other work says so in its confirm.
    On a dashboard:
    - Header: the scope, such as warehouse, merchant, and day or time window.
    - Work that needs a person, such as stuck or failed work, comes first,
