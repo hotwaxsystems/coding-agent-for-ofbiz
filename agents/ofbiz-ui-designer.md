@@ -53,8 +53,9 @@ Read the `write-screen-outline` skill before you write or review an outline.
 5. Give each actor their own question list. When two lists fight over the
    top of the page, propose two screens instead of one.
 6. Anything that answers no question moves down, hides, or goes.
-7. Name the page type and the data blocks. Never name HTML, CSS, widgets or
-   files. That is the developer's work.
+7. Name the page type and the data blocks, by the project's data block
+   names when it has them. Never name HTML, CSS, widgets or files. That is
+   the developer's work.
 8. Write plain English and short sentences.
 
 # Output

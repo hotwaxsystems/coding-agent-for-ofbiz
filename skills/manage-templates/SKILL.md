@@ -65,6 +65,31 @@ Define and maintain complex OFBiz Freemarker (FTL) templates, ensuring correct u
 - **Paths**: Reference templates using `component://` in screen XML.
 - **Macros**: Define reusable UI blocks as `<#macro name param> ... </#macro>` to avoid duplication.
 
+## Data block macros
+A data block is one kind of business value that must look the same on
+every screen, such as a record reference, a date or a status. When the
+project has a data block macro library, draw every business value with it.
+
+- Use the project's macro for each value. Never write HTML for a value
+  that a macro covers. Check the project's rules for the macro list.
+- One macro per kind of data. A parameter picks from a few fixed values,
+  such as `format="date"`. Never pass HTML, CSS or a format string.
+- Show the code first and the name second. A record from an outside system
+  shows its outside code first, such as `OrderHeader.externalId`.
+- A data block macro never queries the database. Do not use the
+  in-template data fetching from step 4 inside one. The screen's Groovy
+  data script loads what the macros need for the whole list, once, before
+  the list is drawn.
+- Every word a macro shows comes from a label. For a status, use the
+  entity label `StatusItem.description.<statusId>`.
+- If no macro fits a value, report it as a gap. Do not draw it by hand.
+
+```ftl
+<td><@record type="order" value=order/></td>
+<td><@badge kind="status" value=order.statusId/></td>
+<td><@dateTime value=shipGroup.shipByDate format="date"/></td>
+```
+
 ## Examples
 **Example: Premium Semantic Dashboard Widget**
 ```ftl

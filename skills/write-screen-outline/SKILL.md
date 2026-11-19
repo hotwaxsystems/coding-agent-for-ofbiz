@@ -146,7 +146,10 @@ in the header, and the work goes in the main column.
    - Anything to act on goes in the side column, such as suggestions.
    - The page only reads. Actions in the side column change only what they
      name.
-6. Name the data blocks each place uses, such as address or status.
+6. Name the data blocks each place uses. When the project has a data block
+   macro library, use its block names, such as `record`, `dateTime` or
+   `badge`, so the developer builds each place with that macro. Example:
+   "Header: order (`record`), stage (`badge`), received (`dateTime`)".
 7. If two actors' first questions fight for the header, propose two screens.
 
 ## Shape of the outline
@@ -201,5 +204,6 @@ screen puts it.
 
 ## Guardrails
 - Never invent an actor or a question.
-- Never name HTML, CSS, widgets, macros or files in an outline.
+- Never name HTML, CSS, widgets or files in an outline. Data block names
+  are the only design names an outline uses.
 - An outline changes before the screen does.
