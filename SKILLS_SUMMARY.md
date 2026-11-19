@@ -41,6 +41,7 @@ This document provides a high-level summary of the specialized skills developed 
 | **manage-labels** | Manage internationalization (i18n) and UI text labels across multiple languages. |
 | **manage-content** | Work with the OFBiz Content Management System (DataResource, Content, ElectronicText). |
 | **write-screen-outline** | Write or review a screen outline: each actor's questions in order, and where the page answers them. |
+| **build-screen-from-outline** | Build a screen from its outline and mockup: page layouts, lists, data blocks and review checks. |
 | **manage-pdf-export** | Design and implement professional documents (Invoices, Labels) using Apache FOP (PDF). |
 
 ## ⚙️ Logic & Flows
