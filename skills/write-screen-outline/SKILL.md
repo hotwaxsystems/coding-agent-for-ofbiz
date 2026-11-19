@@ -29,9 +29,11 @@ in the header, and the work goes in the main column.
    | Page type | Use for |
    | :--- | :--- |
    | Index page | Find and act on many records |
-   | Details page | Review and act on one record |
-   | Create page | Record a new record, one or more steps |
-   | Scan page | One field, scan, confirm, next. For handhelds |
+   | Details page | Review and act on one record, and change it one card at a time. Example: View Person |
+   | Create page | Record a new record, one or more steps. Example: Create Person |
+   | Scan page | One field, scan, confirm, next. For handhelds. Example: Pick |
+   | Desk page | Handheld work done at a computer, by keyboard. Example: Paper desk |
+   | Report page | Read what the data shows over a chosen time. Example: Order profile |
    | Dashboard | Counts that say how the work is going, each linked to its list |
    | Items into containers | Place items into boxes, pallets, carts or locations. Example: Pack order |
 
@@ -69,6 +71,37 @@ in the header, and the work goes in the main column.
    - Closing a container asks for its measure, such as weight, and opens the
      next one when items are left.
    - Complete turns on only when the "not placed yet" list is empty.
+   On a create page:
+   - One column, about two thirds wide. A phone keeps the same order.
+   - Cards in the order people fill them in, taken from the story steps.
+   - Required fields carry a star. A note at the top says what the star
+     means. Ask only for what the story requires; the rest is optional.
+   - A choice of kind, such as a person or a shared sign-in, goes in the
+     header. It hides the cards that kind does not use.
+   - A list inside the record, such as warehouses with roles, adds rows with
+     Add. A row added by mistake can be removed before Save.
+   - A dated row starts today, and the date can be changed.
+   - One Save for the whole page, at the bottom, with Cancel.
+   - An error shows under its field, in plain words. A summary at the top
+     lists the errors and links to each field. Nothing is saved until all
+     are fixed, and the page keeps what was typed.
+   - After Save, the details page of the new record opens with a short
+     message.
+   - Show only the choices the user may make, such as only their own
+     warehouse.
+   On a details page, to change the record:
+   - Each card has its own Edit. The card turns into a form in place, with
+     Save and Cancel. The rest of the page stays as it is.
+   - One card at a time. While one card is in edit, Edit on the others is
+     off.
+   - A list card has Add, which opens a row form at the top of the card.
+   - A row is ended, never deleted. End asks for an end date, with today as
+     the default. An ended row moves under "Show history" on its card.
+   - Edit, Add and End show only where the user may change that row.
+   - An error shows under its field, inside the card. After Save, the card
+     returns to read mode with a short "Saved" mark.
+   - Actions on the whole record, such as turning off a sign-in, go in the
+     header. One that changes other work says so in its confirm.
    On a dashboard:
    - Header: the scope, such as warehouse, merchant, and day or time window.
    - Work that needs a person, such as stuck or failed work, comes first,
@@ -82,6 +115,37 @@ in the header, and the work goes in the main column.
      behind the count, which starts with the same count.
    - Each actor sees only the cards that answer its own questions.
    - No alerts. The person checks the board.
+   On a scan page:
+   - One task per screen, such as one line to pick.
+   - The header answers "where do I go, and what do I take", in large text.
+   - The scan steps sit under the header, one row each, ticked as scanned.
+   - The scan field is always focused. Each scan goes to the next step not
+     yet ticked.
+   - A wrong scan shows red, with what was expected.
+   - The next task opens by itself when the last step is ticked. No extra
+     tap.
+   - Two ways out when a scan cannot be done: confirm by tap, when a
+     barcode will not scan, and short, when the item is not there. A tapped
+     task is recorded as tapped.
+   - The footer shows how much is left, such as "3 of 12", and what comes
+     next.
+   - Pause goes back to the start. The work stays with the worker.
+   - One column, phone width, no menu bar. Large text and buttons, for one
+     thumb and gloves.
+   - Every label comes from the label file, so a second language can be
+     added later.
+   On a desk page:
+   - One column, at a computer.
+   - One tab for each part of the job, such as Start and Finish.
+   - Keyboard first. Enter moves to the next field.
+   - It records the same facts as the scan page it stands in for.
+   On a report page:
+   - Header: the scope, the time choice, and the counts that answer
+     question 1.
+   - Each view is a tab. The tab that answers question 1 opens first.
+   - Anything to act on goes in the side column, such as suggestions.
+   - The page only reads. Actions in the side column change only what they
+     name.
 6. Name the data blocks each place uses, such as address or status.
 7. If two actors' first questions fight for the header, propose two screens.
 
