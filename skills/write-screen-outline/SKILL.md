@@ -31,7 +31,9 @@ in the header, and the work goes in the main column.
    | Index page | Find and act on many records |
    | Details page | Review and act on one record, and change it one card at a time. Example: View Person |
    | Create page | Record a new record, one or more steps. Example: Create Person |
-   | Scan page | One field, scan, confirm, next. For handhelds |
+   | Scan page | One field, scan, confirm, next. For handhelds. Example: Pick |
+   | Desk page | Handheld work done at a computer, by keyboard. Example: Paper desk |
+   | Report page | Read what the data shows over a chosen time. Example: Order profile |
    | Dashboard | Counts that say how the work is going, each linked to its list |
    | Items into containers | Place items into boxes, pallets, carts or locations. Example: Pack order |
 
@@ -113,6 +115,37 @@ in the header, and the work goes in the main column.
      behind the count, which starts with the same count.
    - Each actor sees only the cards that answer its own questions.
    - No alerts. The person checks the board.
+   On a scan page:
+   - One task per screen, such as one line to pick.
+   - The header answers "where do I go, and what do I take", in large text.
+   - The scan steps sit under the header, one row each, ticked as scanned.
+   - The scan field is always focused. Each scan goes to the next step not
+     yet ticked.
+   - A wrong scan shows red, with what was expected.
+   - The next task opens by itself when the last step is ticked. No extra
+     tap.
+   - Two ways out when a scan cannot be done: confirm by tap, when a
+     barcode will not scan, and short, when the item is not there. A tapped
+     task is recorded as tapped.
+   - The footer shows how much is left, such as "3 of 12", and what comes
+     next.
+   - Pause goes back to the start. The work stays with the worker.
+   - One column, phone width, no menu bar. Large text and buttons, for one
+     thumb and gloves.
+   - Every label comes from the label file, so a second language can be
+     added later.
+   On a desk page:
+   - One column, at a computer.
+   - One tab for each part of the job, such as Start and Finish.
+   - Keyboard first. Enter moves to the next field.
+   - It records the same facts as the scan page it stands in for.
+   On a report page:
+   - Header: the scope, the time choice, and the counts that answer
+     question 1.
+   - Each view is a tab. The tab that answers question 1 opens first.
+   - Anything to act on goes in the side column, such as suggestions.
+   - The page only reads. Actions in the side column change only what they
+     name.
 6. Name the data blocks each place uses, such as address or status.
 7. If two actors' first questions fight for the header, propose two screens.
 
