@@ -103,9 +103,17 @@ In OFBiz, emails are not just "logged"—they are managed as **Communication Eve
 - **Compliance**: Ensures legal and support records are archived within the database, not just on a mail server.
 
 ### The Lifecycle Pattern
-1.  **Creation**: A service (e.g., `sendOrderNotificationScreen`) invokes `sendMailFromScreen`.
-2.  **Persistence**: The `sendMail` service family includes SECA (Service ECA) triggers that automatically create a `CommunicationEvent` record.
-3.  **Linkage**: The `communicationEventId` is then linked to the relevant business object (e.g., `OrderHeader`, `Shipment`, or `ContactList`).
+1.  **Send with the party**: The caller passes `partyId` to `sendMail` or `sendMailMultiPart`, or in `bodyParameters` of `sendMailFromScreen`. It passes `orderId` the same way, and `returnId` in the service context.
+2.  **Event before the send**: When `partyId` is set and `communicationEventId` is empty, a SECA runs `createCommEventFromEmail` (party `servicedef/secas.xml`). It creates an `EMAIL_COMMUNICATION` event and links it to the order or return.
+3.  **Event after the send**: On commit, a SECA runs `updateCommEventAfterEmail`. It sets the event to `COM_COMPLETE` and saves the message id, addresses and attachments.
+4.  **No `partyId`, no event**: a send without `partyId` is not logged.
+5.  **Own event**: if the code already created an event, it passes that `communicationEventId` to the send. A send without it creates a second event.
+
+Two facts to know:
+- With `mail.notifications.enabled=N`, the event is still set to `COM_COMPLETE`, though nothing was sent.
+- The sender party is found from the From address. When several parties share that address, trunk picks one of them.
+
+Trunk links an event to an order (`CommunicationEventOrder`), a return (`CommunicationEventReturn`), a customer request (`CustRequestCommEvent`), a work effort, a product or a subscription. There is no shipment link. A shipment email is linked through its order.
 
 ## Attachments and PDF Generation
 
@@ -129,7 +137,7 @@ For non-PDF attachments (e.g., CSVs, images) or multiple files, use `sendMailMul
 - **Fault Tolerance**: SMTP failures must **NEVER** break the main user workflow. Log errors, update `CommunicationEvent` status, but ensure primary actions succeed.
 - **Modern Security**: Externalize secrets (Env vars/Vaults). Avoid plain-text passwords in `general.properties`.
 - **Absolute Continuity**: Always provide plain-text fallbacks (`altBodyScreenLocation`) and pass `webSiteId` for correct absolute URL resolution.
-- **Pattern Compliance**: **ALWAYS** create and link `CommunicationEvent` records for auditability and customer history.
+- **Pattern Compliance**: pass `partyId`, and `orderId` or `returnId`, to every customer email. Trunk then creates, links and completes the `CommunicationEvent`. Create one yourself only when you also pass its `communicationEventId` to the send.
 - **Environment Safety**: Verify `mail.notifications.redirectTo` is set in dev/test.
 
 ## Examples
@@ -174,21 +182,16 @@ run service: 'sendMailFromScreen', with: [
 
 ### Example: Audit Trail Linking (Groovy)
 ```groovy
-// Step 1: Send the email as usual
 Map result = run service: 'sendMailFromScreen', with: [
-    emailTemplateSettingId: 'PRDS_ODR_CONFIRM',
+    sendFrom: 'orders@example.com',
     sendTo: 'customer@example.com',
-    bodyParameters: [orderId: '10000']
+    subject: 'Order 10000 confirmed',
+    bodyScreenUri: 'component://example/widget/EmailScreens.xml#OrderConfirmNotice',
+    bodyParameters: [orderId: '10000', partyId: 'CUST_10000']
 ]
-
-// Step 2: The service automatically creates a CommunicationEvent.
-// Step 3: Link it to your business document for visibility.
-String commEventId = result.communicationEventId;
-run service: 'createCommunicationEventOrder', with: [
-    communicationEventId: commEventId,
-    orderId: '10000'
-]
+String commEventId = result.communicationEventId
 ```
+The SECAs create the event, link it to order 10000 and complete it. No `createCommunicationEventOrder` call is needed.
 
 ## Anti-Patterns
 
