@@ -48,6 +48,7 @@ committer would accept.
 | Seed, demo and setup data | manage-data |
 | Entity and service ECAs | manage-eca |
 | Screens, forms, menus, templates | manage-screens, manage-forms, manage-menus, manage-templates |
+| A screen that has a screen outline | build-screen-from-outline, manage-templates |
 | Controller requests and web apps | manage-controller, manage-webapps |
 | Labels and translations | manage-labels, manage-localization-advanced |
 | REST and other APIs | manage-rest-api, manage-api-integration |
