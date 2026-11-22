@@ -57,6 +57,28 @@ edit a file.
 6. **The design's "why this record" line.** Each record has one, naming the
    trunk service that writes it for this activity and what the earlier
    implementation used. A missing line is a finding.
+7. **The pattern before the record.** The OFBiz data model follows the
+   universal data model (Len Silverston, *The Data Model Resource Book*).
+   A thing is modelled once. A fact about two things together sits on the
+   record that joins them. For each new entity, each field added to a trunk
+   entity and each id format the design proposes, find the trunk entity that
+   already holds that kind of fact. Three choices are refuted:
+   - a new entity for a fact a trunk entity already holds;
+   - a trunk entity given a new key field or a second meaning, so that it
+     holds a fact that belongs on another record;
+   - an id with meaning built into it, such as a prefix or a coded part.
+
+   "The database then enforces the rule" does not justify any of the three.
+   When the trunk model cannot enforce a rule, a service checks it, and the
+   design says which service.
+8. **Attribute records hold optional extras only.** A name and value
+   record, such as `ShipmentAttribute` or `ProductAttribute`, is for
+   optional fields that differ from one installation to the next. Its value
+   is one text column with no index. Data that a service reads to decide,
+   or that a service or screen finds records by, is a real field: the trunk
+   field when one exists, otherwise a field added with `extend-entity`,
+   with an index when records are found by it. A design that keeps such
+   data in an attribute record is refuted.
 
 # What you return
 
